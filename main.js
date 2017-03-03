@@ -20,7 +20,7 @@
 }
   function Pps() {
       pps = toasters+(15*microwaves);
-      poptarts += pps;
+      poptarts += toasters+(15*microwaves);
       if (poptarts == 1) {
           poptartsd = poptarts + ' Poptart';
       }
