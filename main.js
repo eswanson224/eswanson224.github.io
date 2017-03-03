@@ -46,7 +46,8 @@
       document.getElementById("toasters").innerHTML = toasters;
       document.getElementById("poptarts").innerHTML = poptartsd;
       document.getElementById("toasterprice").innerHTML = toasterpriced;
-}
+      }
+  }
     function Microwave() {
       if (poptarts >= microwavepricer) {
       microwaves += 1;
