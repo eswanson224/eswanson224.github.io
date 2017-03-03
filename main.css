@@ -12,7 +12,7 @@ p{
       -ms-user-select: none;
           user-select: none;
 }
-#toasterprice {
+#toasterprice, #microwaveprice {
   color: #FFF;
   margin: 0px;
   padding-top: 10px;
