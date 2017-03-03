@@ -13,7 +13,6 @@ p{
       animation: colorchange 10s infinite;
       -webkit-animation: colorchange 10s infinite;
       width: 100%;
-      background:rgba(0, 0, 0, 0.4);
     }
 
     @keyframes colorchange
