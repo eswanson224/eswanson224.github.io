@@ -57,3 +57,4 @@
       document.getElementById("poptarts").innerHTML = poptartsd;
       document.getElementById("microwaveprice").innerHTML = microwavepriced;
       }
+    }
