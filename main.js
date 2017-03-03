@@ -1,13 +1,13 @@
   var poptarts = 0;
   var poptartsd = poptarts + ' Poptarts';
   var toasters = 0;
-  var farms = 0;
+  var microwaves = 0;
   var pps = 0;
   var ppsd = pps + ' Poptarts Per Second';
   var toasterpricer = 100;
   var toasterpriced = '';
-  var farmpricer = 1000;
-  var farmpriced = '';
+  var microwavepricer = 1000;
+  var microwavepriced = '';
   function Click() {
       poptarts += 1;
       if (poptarts == 1) {
@@ -19,7 +19,7 @@
       document.getElementById("poptarts").innerHTML = poptartsd;
 }
   function Pps() {
-      pps = (1*toasters)+(15*farms)
+      pps = (1*toasters)+(15*microwaves)
       poptarts += pps;
       if (poptarts == 1) {
           poptartsd = poptarts + ' Poptart';
@@ -47,13 +47,13 @@
       document.getElementById("poptarts").innerHTML = poptartsd;
       document.getElementById("toasterprice").innerHTML = toasterpriced;
 }
-    function Farm() {
-      if (poptarts >= farmpricer) {
-      farms += 1;
-      poptarts -= farmpricer;
-      farmpricer = Math.round(farmpricer*(0.05*farms));
-      farmpriced = farmpricer + ' Poptarts';
-      document.getElementById("farms").innerHTML = farms;
+    function Microwave() {
+      if (poptarts >= microwavepricer) {
+      microwaves += 1;
+      poptarts -= microwavepricer;
+      microwavepricer = Math.round(microwavepricer*(0.05*microwaves));
+      microwavepriced = microwavepricer + ' Poptarts';
+      document.getElementById("microwaves").innerHTML = microwaves;
       document.getElementById("poptarts").innerHTML = poptartsd;
-      document.getElementById("farmprice").innerHTML = farmpriced;
+      document.getElementById("microwaveprice").innerHTML = microwavepriced;
       }
