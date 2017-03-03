@@ -6,7 +6,7 @@
   var ppsd = pps + ' Poptarts Per Second';
   var toasterpricer = 100;
   var toasterpriced = '';
-  var farmpricer = 10000;
+  var farmpricer = 1000;
   var farmpriced = '';
   function Click() {
       poptarts += 1;
@@ -19,7 +19,7 @@
       document.getElementById("poptarts").innerHTML = poptartsd;
 }
   function Pps() {
-      pps = toasters
+      pps = (1*toasters)+(15*farms)
       poptarts += pps;
       if (poptarts == 1) {
           poptartsd = poptarts + ' Poptart';
@@ -52,8 +52,8 @@
       farms += 1;
       poptarts -= farmpricer;
       farmpricer = Math.round(farmpricer*(0.05*farms));
-      toasterpriced = toasterpricer + ' Poptarts';
+      farmpriced = farmpricer + ' Poptarts';
       document.getElementById("farms").innerHTML = farms;
       document.getElementById("poptarts").innerHTML = poptartsd;
-      document.getElementById("farmprice").innerHTML = farmpricer;
+      document.getElementById("farmprice").innerHTML = farmpriced;
       }
