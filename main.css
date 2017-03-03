@@ -5,9 +5,28 @@ h1, button{
 p{
   color:#000;
   font-size: 24px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#toasterprice {
+  color: #FFF;
+  margin: 0px;
+  padding-top: 10px;
 }
 #pps {
     text-align: center;
+    color: #000;
+    font-size: 24px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 #text {
       animation: colorchange 10s infinite;
@@ -129,6 +148,12 @@ p{
 	-ms-transition: opacity 0.1s ease-out,-ms-transform 0.1s ease-out;
 	-o-transition: opacity 0.1s ease-out,-o-transform 0.1s ease-out;
 	transition: opacity 0.1s ease-out,transform 0.1s ease-out;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 #poptart:hover
 {
