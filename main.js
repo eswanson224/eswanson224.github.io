@@ -19,7 +19,7 @@
       document.getElementById("poptarts").innerHTML = poptartsd;
 }
   function Pps() {
-      pps = (1*toasters)+(15*microwaves)
+      pps = toasters+(15*microwaves);
       poptarts += pps;
       if (poptarts == 1) {
           poptartsd = poptarts + ' Poptart';
