@@ -8,6 +8,10 @@
   var toasterpriced = '';
   var microwavepricer = 1000;
   var microwavepriced = '';
+  function Start() {
+    Load();
+    Save();
+}
   function Click() {
       poptarts += 1;
       if (poptarts == 1) {
