@@ -41,13 +41,15 @@
     var poptartss = poptarts;
     var toasterss = toasters;
     var microwavess = microwaves;
-    localStorage.setItem("poptartss", poptartss);
-    localStorage.setItem("toasterss", toasterss);
-    localStorage.setItem("microwavess", microwavess);
-    setTimeout(Save, 120000);
+    localStorage.setItem("poptarts", poptartss);
+    localStorage.setItem("toasters", toasterss);
+    localStorage.setItem("microwaves", microwavess);
+    setTimeout(Save, 30000);
 }
   function Load() {
-    
+    var poptarts = localStorage.getItem("poptarts");
+    var toasters = localStorage.getItem("toasters");
+    var microwaves = localStorage.getItem("microwaves");
 }
   function Toaster() {
       if (poptarts >= toasterpricer) {
