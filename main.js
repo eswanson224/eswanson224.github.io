@@ -8,10 +8,6 @@
   var toasterpriced = '';
   var microwavepricer = 1000;
   var microwavepriced = '';
-  function Start() {
-    Load();
-    Save();
-}
   function Click() {
       poptarts += 1;
       if (poptarts == 1) {
@@ -48,12 +44,12 @@
     localStorage.setItem("poptarts", poptartss);
     localStorage.setItem("toasters", toasterss);
     localStorage.setItem("microwaves", microwavess);
-    setTimeout(Save, 30000);
 }
   function Load() {
     var poptarts = localStorage.getItem("poptarts");
     var toasters = localStorage.getItem("toasters");
     var microwaves = localStorage.getItem("microwaves");
+    setTimeout(Save, 30000);
 }
   function Toaster() {
       if (poptarts >= toasterpricer) {
