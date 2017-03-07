@@ -37,6 +37,18 @@
       document.getElementById("pps").innerHTML = ppsd;
       setTimeout(Pps, 1000);
 }
+  function Save() {
+    var poptartss = poptarts;
+    var toasterss = toasters;
+    var microwavess = microwaves;
+    localStorage.setItem("poptartss", poptartss);
+    localStorage.setItem("toasterss", toasterss);
+    localStorage.setItem("microwavess", microwavess);
+    setTimeout(Save, 120000);
+}
+  function Load() {
+    
+}
   function Toaster() {
       if (poptarts >= toasterpricer) {
       toasters += 1;
