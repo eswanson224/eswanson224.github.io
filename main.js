@@ -4,6 +4,9 @@
   var microwaves = 0;
   var pps = 0;
   var ppsd = pps + ' Poptarts Per Second';
+  var poptartss = '';
+  var toasterss = '';
+  var microwavess = '';
   var toasterpricer = 100;
   var toasterpriced = '';
   var microwavepricer = 1000;
@@ -38,17 +41,18 @@
       setTimeout(Pps, 1000);
 }
   function Save() {
-    var poptartss = poptarts;
-    var toasterss = toasters;
-    var microwavess = microwaves;
-    localStorage.setItem("poptarts", poptartss);
-    localStorage.setItem("toasters", toasterss);
-    localStorage.setItem("microwaves", microwavess);
+    localStorage.setItem("poptarts", poptarts);
+    localStorage.setItem("toasters", toasters);
+    localStorage.setItem("microwaves", microwaves);
 }
   function Load() {
-    var poptarts = localStorage.getItem("poptarts");
-    var toasters = localStorage.getItem("toasters");
-    var microwaves = localStorage.getItem("microwaves");
+    poptartss = localStorage.getItem("poptarts");
+    toasterss = localStorage.getItem("toasters");
+    microwavess = localStorage.getItem("microwaves");
+    poptarts = Number(poptartss);
+    toasters = Number(toasterss);
+    microwaves = Number(microwavess);
+    Pps();
     setTimeout(Save, 30000);
 }
   function Toaster() {
