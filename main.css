@@ -15,6 +15,9 @@ p{
 .count{
 	font-size: 18px;
 }
+#clear{
+	background-color:#F00;
+}
 #toasterprice, #microwaveprice{
 	color: #FFF;
 	margin: 0px;
