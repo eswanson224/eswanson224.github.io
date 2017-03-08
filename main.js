@@ -5,7 +5,7 @@ var toastersd = toasters + ' Toasters';
 var microwaves = 0;
 var microwavesd = microwaves + ' Microwaves';
 var farms = 0;
-var farmsd = toasters + ' Toasters';
+var farmsd = farms + ' Farms';
 var toasterpricer = Math.round(100*Math.pow(1.15, toasters));
 var toasterpriced = toasterpricer + ' Poptarts';
 var microwavepricer = Math.round(1000*Math.pow(1.15, microwaves));
@@ -93,10 +93,10 @@ function Load() {
     microwavesd = microwaves + ' Microwaves';
   }
   if (farms == 1) {
-    farmsd = farms + ' Toaster';
+    farmsd = farms + ' Farm';
   }
   else {
-    farmsd = farms + ' Toasters';
+    farmsd = farms + ' Farms';
   }
   Pps();
   document.getElementById("toasters").innerHTML = toastersd;
@@ -171,8 +171,8 @@ function Farm() {
     else {
       farmsd = farms + ' Toasters';
     }
-    document.getElementById("toasters").innerHTML = farmsd;
+    document.getElementById("farms").innerHTML = farmsd;
     document.getElementById("poptarts").innerHTML = poptartsd;
-    document.getElementById("toasterprice").innerHTML = farmpriced;
+    document.getElementById("farmprice").innerHTML = farmpriced;
   }
 }
