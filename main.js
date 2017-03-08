@@ -157,7 +157,7 @@ function Farm() {
   if (poptarts >= farmpricer) {
     farms += 1;
     poptarts -= farmpricer;
-    farmpricer = Math.round(100*Math.pow(1.15, toasters));
+    farmpricer = Math.round(10000*Math.pow(1.15, toasters));
     farmpriced = farmpricer + ' Poptarts';
     if (poptarts == 1) {
       poptartsd = poptarts + ' Poptart';
