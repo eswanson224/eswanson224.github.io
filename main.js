@@ -56,6 +56,8 @@ function Load() {
   microwaves = Number(microwavess);
   toasterpricer = Math.round(100*Math.pow(1.05, toasters));
   microwavepricer = Math.round(1000*Math.pow(1.05, microwaves));
+  toasterpriced = toasterpricer + ' Poptarts'
+  microwavepriced = microwavepricer + ' Poptarts'
   if (poptarts == 1) {
     poptartsd = poptarts + ' Poptart';
   }
@@ -77,6 +79,8 @@ function Load() {
   Pps();
   document.getElementById("toasters").innerHTML = toastersd;
   document.getElementById("microwaves").innerHTML = microwavesd;
+  document.getElementById("toasterprice").innerHTML = toasterpriced;
+  document.getElementById("microwaveprice").innerHTML = microwavepriced;
   setTimeout(Save, 30000);
 }
 function Toaster() {
