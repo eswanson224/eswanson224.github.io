@@ -23,7 +23,7 @@ p{
 	background-color:#F00;
 	width: 60%;
 }
-#toasterprice, #microwaveprice{
+#toasterprice, #microwaveprice, #farmprice{
 	color: #FFF;
 	margin: 0px;
 	padding-top: 10px;
