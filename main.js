@@ -54,6 +54,8 @@ function Load() {
   poptarts = Number(poptartss);
   toasters = Number(toasterss);
   microwaves = Number(microwavess);
+  toasterpricer = Math.round(100*Math.pow(1.05, toasters));
+  microwavepricer = Math.round(1000*Math.pow(1.05, microwaves));
   if (poptarts == 1) {
     poptartsd = poptarts + ' Poptart';
   }
