@@ -7,7 +7,7 @@
   var poptartss = '';
   var toasterss = '';
   var microwavess = '';
-  var toasterpricer = Math.round(100 + toasterpricer * (0.05 * toasters));
+  var toasterpricer = 100;
   var toasterpriced = '';
   var microwavepricer = 1000;
   var microwavepriced = '';
@@ -44,14 +44,20 @@
     localStorage.setItem("poptarts", poptarts);
     localStorage.setItem("toasters", toasters);
     localStorage.setItem("microwaves", microwaves);
+    localStorage.setItem("toasterprice", toasterpricer);
+    localStorage.setItem("microwaveprice", microwavepricer);
 }
   function Load() {
     poptartss = localStorage.getItem("poptarts");
     toasterss = localStorage.getItem("toasters");
     microwavess = localStorage.getItem("microwaves");
+    toasterprices = localStorage.getItem("toasterprice");
+    microwaveprices = localStorage.getItem("microwaveprice");
     poptarts = Number(poptartss);
     toasters = Number(toasterss);
     microwaves = Number(microwavess);
+    toasterpricer = Number(toasterprices);
+    microwavepricer = Number(microwaveprices);
     Pps();
     setTimeout(Save, 30000);
 }
@@ -70,7 +76,7 @@
       if (poptarts >= microwavepricer) {
       microwaves += 1;
       poptarts -= microwavepricer;
-      microwavepricer += Math.round(microwavepricer*(0.05*microwaves));
+      microwavepricer += Math.round(microwavepricer * (0.05 * microwaves));
       microwavepriced = microwavepricer + ' Poptarts';
       document.getElementById("microwaves").innerHTML = microwaves;
       document.getElementById("poptarts").innerHTML = poptartsd;
