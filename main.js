@@ -44,20 +44,14 @@
     localStorage.setItem("poptarts", poptarts);
     localStorage.setItem("toasters", toasters);
     localStorage.setItem("microwaves", microwaves);
-    localStorage.setItem("toasterprice", toasterpricer);
-    localStorage.setItem("microwaveprice", microwavepricer);
 }
   function Load() {
     poptartss = localStorage.getItem("poptarts");
     toasterss = localStorage.getItem("toasters");
     microwavess = localStorage.getItem("microwaves");
-    toasterprices = localStorage.getItem("toasterprice");
-    microwaveprices = localStorage.getItem("microwaveprice");
     poptarts = Number(poptartss);
     toasters = Number(toasterss);
     microwaves = Number(microwavess);
-    toasterpricer = Number(toasterprices);
-    microwavepricer = Number(microwaveprices);
     Pps();
     setTimeout(Save, 30000);
 }
