@@ -81,7 +81,7 @@ function Toaster() {
   if (poptarts >= toasterpricer) {
     toasters += 1;
     poptarts -= toasterpricer;
-    toasterpricer += Math.round(100*Math.pow(1.05, toasters));
+    toasterpricer = Math.round(100*Math.pow(1.05, toasters));
     toasterpriced = toasterpricer + ' Poptarts';
     if (poptarts == 1) {
       poptartsd = poptarts + ' Poptart';
@@ -104,7 +104,7 @@ function Microwave() {
   if (poptarts >= microwavepricer) {
     microwaves += 1;
     poptarts -= microwavepricer;
-    microwavepricer += Math.round(1000*Math.pow(1.05, microwaves));
+    microwavepricer = Math.round(1000*Math.pow(1.05, microwaves));
     microwavepriced = microwavepricer + ' Poptarts';
     if (poptarts == 1) {
       poptartsd = poptarts + ' Poptart';
