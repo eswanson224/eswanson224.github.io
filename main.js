@@ -7,7 +7,7 @@
   var poptartss = '';
   var toasterss = '';
   var microwavess = '';
-  var toasterpricer = 100;
+  var toasterpricer = Math.round(100 + toasterpricer * (0.05 * toasters));
   var toasterpriced = '';
   var microwavepricer = 1000;
   var microwavepriced = '';
@@ -59,7 +59,7 @@
       if (poptarts >= toasterpricer) {
       toasters += 1;
       poptarts -= toasterpricer;
-      toasterpricer += Math.round(toasterpricer*(0.05*toasters));
+      toasterpricer += Math.round(toasterpricer * (0.05 * toasters));
       toasterpriced = toasterpricer + ' Poptarts';
       document.getElementById("toasters").innerHTML = toasters;
       document.getElementById("poptarts").innerHTML = poptartsd;
