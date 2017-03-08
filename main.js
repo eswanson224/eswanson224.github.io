@@ -54,9 +54,27 @@ function Load() {
   poptarts = Number(poptartss);
   toasters = Number(toasterss);
   microwaves = Number(microwavess);
+  if (poptarts == 1) {
+    poptartsd = poptarts + ' Poptart';
+  }
+  else {
+    poptartsd = poptarts + ' Poptarts';
+  }
+  if (toasters == 1) {
+    toastersd = toasters + ' Toaster';
+  }
+  else {
+    toastersd = toasters + ' Toasters';
+  }
+  if (microwaves == 1) {
+    microwavesd = microwaves + ' Microwave';
+  }
+  else {
+    microwavesd = microwaves + ' Microwaves';
+  }
   Pps();
-  document.getElementById("toasters").innerHTML = toasters;
-  document.getElementById("microwaves").innerHTML = microwaves;
+  document.getElementById("toasters").innerHTML = toastersd;
+  document.getElementById("microwaves").innerHTML = microwavesd;
   setTimeout(Save, 30000);
 }
 function Toaster() {
