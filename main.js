@@ -53,6 +53,8 @@
     toasters = Number(toasterss);
     microwaves = Number(microwavess);
     Pps();
+    document.getElementById("toasters").innerHTML = toasters;
+    document.getElementById("microwaves").innerHTML = microwaves;
     setTimeout(Save, 30000);
 }
   function Toaster() {
