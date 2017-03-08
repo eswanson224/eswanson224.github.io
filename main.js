@@ -10,7 +10,7 @@ var toasterpricer = Math.round(100*Math.pow(1.15, toasters));
 var toasterpriced = toasterpricer + ' Poptarts';
 var microwavepricer = Math.round(1000*Math.pow(1.15, microwaves));
 var microwavepriced = microwavepricer + ' Poptarts';
-var farmpricer = Math.round(10000*Math.pow(1.15, toasters));
+var farmpricer = Math.round(10000*Math.pow(1.15, farms));
 var farmpriced = farmprice + ' Poptarts';
 var pps = 0;
 var ppsd = pps + ' Poptarts Per Second';
@@ -157,7 +157,7 @@ function Farm() {
   if (poptarts >= farmpricer) {
     farms += 1;
     poptarts -= farmpricer;
-    farmpricer = Math.round(10000*Math.pow(1.15, toasters));
+    farmpricer = Math.round(10000*Math.pow(1.15, farms));
     farmpriced = farmpricer + ' Poptarts';
     if (poptarts == 1) {
       poptartsd = poptarts + ' Poptart';
@@ -166,10 +166,10 @@ function Farm() {
       poptartsd = poptarts + ' Poptarts';
     }
     if (farms == 1) {
-      farmsd = farms + ' Toaster';
+      farmsd = farms + ' Farm';
     }
     else {
-      farmsd = farms + ' Toasters';
+      farmsd = farms + ' Farms';
     }
     document.getElementById("farms").innerHTML = farmsd;
     document.getElementById("poptarts").innerHTML = poptartsd;
