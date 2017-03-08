@@ -23,9 +23,14 @@ p{
   padding-top: 10px;
 }
 #pps {
-    text-align: center;
-    color: #000;
-    font-size: 24px;
+    display: inline-block;
+    width:100%;
+	left:0px;
+	text-align:center;
+    font-size: 18px;
+	background:#000;
+	background:rgba(0, 0, 0, 0.4);
+	padding:2px 0px;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
@@ -33,12 +38,17 @@ p{
         -ms-user-select: none;
             user-select: none;
 }
+#block{
+    top: 10%;
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+}
 #text {
       animation: colorchange 10s infinite;
       -webkit-animation: colorchange 10s infinite;
       width: 100%;
     }
-
     @keyframes colorchange
     {
       0%   {color: red;}
@@ -178,12 +188,10 @@ p{
 }
 #poptarts
 {
-	position:absolute;
+    display: inline-block;
 	left:0px;
-	top:15%;
 	width:100%;
 	text-align:center;
-	z-index:200;
 	background:#000;
 	background:rgba(0, 0, 0, 0.4);
 	padding:2px 0px;
