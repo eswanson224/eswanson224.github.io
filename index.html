@@ -1,48 +1,49 @@
 <html>
-    <head>
-        <title>Poptart Clicker</title>
-        <link href="main.css" rel="stylesheet" type="text/css">
-        <link id="favicon" rel="icon" type="image/png" href="img/icon.png">
-    </head>
-    <body onload="Load();">
-        <script src="main.js"></script>
-        <div id="backgroundLayers">
-		  <div id="backgroundLayer1"></div>
-        </div>
-    <div id="sectionleft" class="inset">
-        <div id="block">
-        <div id="poptarts" class="title">0 Poptarts</div>
-        <div id="pps" class="title">0 Poptarts Per Second</div>
-        </div>
-        <div id="poptartAnchor">
-            <div id="poptart" onclick="Click()"></div>
-        </div>
-    </div>
-    <div id="sectionMiddle" class="inset">
-        <br>
-	<div class="sub-main">
-            <button class="button-one" onclick="Save()"><p style="color: #FFF; margin: 0px;">Save Game</p></button>
-	</div>
-	<br>
-        <div id="text" class="title">
-            <marquee behavior="alternate" scrollamount="20" style="font-size: 24;">Erik &amp; Nathan are kewl!</marquee>
-	    </div>
-	<br>
-	<br>
-	<marquee scrollamount="20" style="font-size: 18;">How many licks does it take to get to the center of a Tootsie Pop?</marquee>
-        <br>
-        <br>
+	<head>
+		<title>Poptart Clicker</title>
+		<link href="main.css" rel="stylesheet" type="text/css">
+		<link id="favicon" rel="icon" type="image/png" href="img/icon.png">
+	</head>
+	<body onload="Load();">
+		<script src="main.js"></script>
+		<div id="backgroundLayers">
+			<div id="backgroundLayer1"></div>
+		</div>
+		<div id="sectionleft" class="inset">
+			<div id="block">
+				<div id="poptarts" class="title">0 Poptarts</div>
+				<div id="pps" class="title">0 Poptarts Per Second</div>
+			</div>
+			<div id="poptartAnchor">
+				<div id="poptart" onclick="Click()"></div>
+			</div>
+		</div>
+		<div id="sectionMiddle" class="inset">
+			<br>
+			<div class="sub-main">
+				<button class="button-one" onclick="Save()"><p style="color: #FFF; margin: 0px;">Save Game</p></button>
+			</div>
+			<br>
+			<div id="text" class="title">
+				<marquee behavior="alternate" scrollamount="20" style="font-size: 24;">Erik &amp; Nathan are kewl!</marquee>
+			</div>
+			<br>
+			<br>
+			<marquee scrollamount="20" style="font-size: 18;">How many licks does it take to get to the center of a Tootsie Pop?</marquee>
+			<br>
+			<br>
             <marquee scrollamount="20">
-                <img src="http://farm4.static.flickr.com/3484/3696757249_d353f90a53_o.gif" width="139" height="200">
+				<img src="http://farm4.static.flickr.com/3484/3696757249_d353f90a53_o.gif" width="139" height="200">
             </marquee>
-        </div>
-    <div id="sectionRight" class="inset">
-        <div class="sub-main">
-            <button class="button-one" onclick="Toaster()"><p style="color: #FFF; margin: 0px;">Buy a Toaster</p><p id="toasterprice">100 Poptarts</p></button>
-            <p><a id="toasters">0</a> Toasters</p>
-	    <br>
-            <button class="button-one" onclick="Microwave()"><p style="color: #FFF; margin: 0px;">Buy a Microwave</p><p id="microwaveprice">1000 Poptarts</p></button>
-            <p><a id="microwaves">0</a> Microwaves</p>
-        </div>
-    </div>
-</body></html>
+		</div>
+		<div id="sectionRight" class="inset">
+			<div class="sub-main">
+				<button class="button-one" onclick="Toaster()"><p style="color: #FFF; margin: 0px;">Buy a Toaster</p><p id="toasterprice">100 Poptarts</p></button>
+				<div id="toasters">0 Toasters</div>
+				<br>
+				<button class="button-one" onclick="Microwave()"><p style="color: #FFF; margin: 0px;">Buy a Microwave</p><p id="microwaveprice">1000 Poptarts</p></button>
+				<div id="microwaves">0 Microwaves</div>
+			</div>
+		</div>
+	</body>
+</html>
