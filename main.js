@@ -42,6 +42,10 @@ function Pps() {
   document.getElementById("pps").innerHTML = ppsd;
   setTimeout(Pps, 1000);
 }
+function Clear() {
+  localStorage.clear();
+  location.reload();
+}
 function Save() {
   localStorage.setItem("poptarts", poptarts);
   localStorage.setItem("toasters", toasters);
