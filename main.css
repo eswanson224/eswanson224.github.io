@@ -15,11 +15,13 @@ p{
 .count{
 	font-size: 18px;
 }
-.midbutton{
+#save{
+	background-color:#0D0;
 	width: 60%;
 }
 #clear{
 	background-color:#F00;
+	width: 60%;
 }
 #toasterprice, #microwaveprice{
 	color: #FFF;
