@@ -43,8 +43,10 @@ function Pps() {
   setTimeout(Pps, 1000);
 }
 function Clear() {
+  if (confirm("Are you sure, this will clear all of your progress!") == true) {
   localStorage.clear();
   location.reload();
+  }
 }
 function Save() {
   localStorage.setItem("poptarts", poptarts);
