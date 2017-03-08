@@ -5,6 +5,7 @@ h1, button{
 p{
 	color:#000;
 	font-size: 24px;
+	text-align: center;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
