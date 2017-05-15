@@ -133,8 +133,9 @@ SNAKE.Snake = SNAKE.Snake || (function() {
             getMode('Extreme', 25);
             getMode('Impossible', 10);
 	 function getGame (game, growth) {
-    document.getElementById(growth).addEventListener('click', function () { growthIncr = growth });
+    document.getElementById(game).addEventListener('click', function () { growthIncr = growth });
 }
+	    getGame('Normal', 5);
 	    getGame('Superbig', 999999999);
         // ----- public variables -----
         me.snakeBody = {};
