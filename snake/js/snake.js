@@ -136,7 +136,7 @@ SNAKE.Snake = SNAKE.Snake || (function() {
     document.getElementById(game).addEventListener('click', function () { growthIncr = growth });
 }
 	    getGame('Normal', 5);
-	    getGame('Superbig', 999999999);
+	    getGame('Superbig', 999);
         // ----- public variables -----
         me.snakeBody = {};
         me.snakeBody["b0"] = new SnakeBlock(); // create snake head
