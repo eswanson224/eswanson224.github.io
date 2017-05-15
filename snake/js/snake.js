@@ -127,14 +127,14 @@ SNAKE.Snake = SNAKE.Snake || (function() {
         function getMode (mode, speed) {
     document.getElementById(mode).addEventListener('click', function () { snakeSpeed = speed; });
 }
-            getMode('Easy', 100);
+	 function getGame (game, growth) {
+    document.getElementById(game).addEventListener('click', function () { growthIncr = growth; });
+}
+	    getMode('Easy', 100);
             getMode('Medium', 75);
             getMode('Difficult', 50);
             getMode('Extreme', 25);
             getMode('Impossible', 10);
-	 function getGame (game, growth) {
-    document.getElementById(game).addEventListener('click', function () { growthIncr = growth; });
-}
 	    getGame('Normal', 5);
 	    getGame('Superbig', 999);
         // ----- public variables -----
