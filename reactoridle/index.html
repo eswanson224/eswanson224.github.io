@@ -4,12 +4,19 @@
     function formChanged() {
       var a = document.getElementsByName("save")[0].value;
       var b = LZString.decompressFromBase64(a)
-      document.getElementById("answer").innerHTML = b
+      document.getElementById("b").innerHTML = b
+    }
+    function saveChanged() {
+      var b = document.getElementById("b").innerHTML
+      var c = LZString.compressToBase64(b)
+      document.getElementById("c").innerHTML = c
     }
   </script>
   <div>
     Your Encoded Save Data Here: <input type="text" name="save" onkeyup="formChanged()" onchange="formChanged()"/>
   </div>
   <br>
-  <div id="answer" contenteditable="true"></div>
+  <div id="b" contenteditable="true" onkeyup="saveChanged()" onchange="saveChanged()"></div>
+  <br>
+  <div id="c"></div>
 </body>
