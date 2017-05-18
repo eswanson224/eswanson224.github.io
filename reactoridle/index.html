@@ -3,15 +3,14 @@
 </head>
 <body>
   <script>
-    function decode(save) {
-      var a = LZString.decodeFromBase64(save)
-      document.getElementById("answer") = a
+    function formChanged() {
+      var a = document.getElementsByName("save")[0].value;
+      var b = LZString.decodeFromBase64(a)
+      document.getElementById("answer") = b
     }
   </script>
   <div>
-    <form action="decode(save)">
-      Your Save to Decrypt Here: <input type="text" name="save"><input type="submit" value="Decrypt">
-    </form>
+    Your Encoded Save Data Here: <input type="text" name="save" onkeyup="formChanged()" onchange="formChanged()"/>
   </div>
   <br>
   <div id="answer"></div>
