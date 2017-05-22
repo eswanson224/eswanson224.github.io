@@ -1,12 +1,14 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body>
+<body onload="run();">
   <script>
-    var a = open(prompt("", "http://"))
     function open("url") {
-      document.getElementById("a").innerHTML = "<iframe>"
+      document.getElementById("a").innerHTML = "<iframe src=" + url + "></iframe>"
+    }
+    function run {
+      var a = open(prompt("", "http://"))
     }
   </script>
-  <div id="a"><iframe></div>
+  <div id="a"></div>
 </body>
