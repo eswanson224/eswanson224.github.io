@@ -7,7 +7,8 @@
       document.getElementById("a").innerHTML = "<iframe src=" + url + "></iframe>"
     }
     function run {
-      var a = open(prompt("", "http://"))
+      var a = prompt("", "http://")
+      open(a)
     }
   </script>
   <div id="a"></div>
