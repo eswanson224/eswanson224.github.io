@@ -1,10 +1,10 @@
 <head>
 </head>
-<body onload="run();">
+<body style="margin: 0px; width: 100%; height: 100%;" onload="run();">
   <script>
     function run() {
       var a = prompt("", "http://")
-      document.getElementById("a").innerHTML = "<iframe src=" + a + "></iframe>"
+      document.getElementById("a").innerHTML = "<iframe src=" + a + " style='height: 100%; width: 100%;'></iframe>"
     }
   </script>
   <div id="a"></div>
