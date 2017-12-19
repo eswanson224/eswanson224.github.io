@@ -4,7 +4,7 @@ x = wall
 */
 
 var plan1 = [
-	"            o  ",	// sets the width of the level to 15
+  "            o  ",	// sets the width of the level to 15
   "               ",
   "               ",
   "            o  ",
@@ -359,7 +359,7 @@ function runGame(plans, Display) {
       else if (n < plans.length - 1)
       	startLevel(n + 1)
       else
-      	console.log("You win!")
+      	document.body.innerHTML = "You win!"
     })
   }
   startLevel(0)
