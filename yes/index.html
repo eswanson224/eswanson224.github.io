@@ -15,7 +15,7 @@ if (localStorage.yes) {
 }
 
 input.addEventListener("keyup", function(event) {
-  if (event.keyCode === 13 && input.value == "haha yes") {
+  if (input.value == "haha yes") {
     input.value = ""
     yes++
     count.innerText = `${yes} haha yes's`
