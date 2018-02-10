@@ -12,6 +12,7 @@ var input = document.getElementById('haha yes')
 var yes = 0
 if (localStorage.yes) {
   yes = localStorage.yes
+  count.innerText = `${yes} haha yes's`
 }
 
 input.addEventListener("keyup", function(event) {
