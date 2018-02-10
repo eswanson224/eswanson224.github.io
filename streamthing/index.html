@@ -1,0 +1,21 @@
+<head>
+<title>Haha Yes</title>
+</head>
+<body>
+<div id="count">0 haha yes's</div>
+<br>
+<input id="haha yes">
+
+<script>
+var count = document.getElementById('count')
+var input = document.getElementById('haha yes')
+var yes = 0
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13 && input.value == "haha yes") {
+    input.value = ""
+    yes++
+    count.innerText = `${yes} haha yes's`
+  }
+})
+</script>
+</body>
