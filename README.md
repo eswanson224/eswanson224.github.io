@@ -1,3 +1,3 @@
 # eswanson224.github.io
 
-A simple chatbot for discord with custom commands written in node.js using the discord.js library as an api wrapper.
+A simple website written in pure html, css, and js that I made in middle school.
